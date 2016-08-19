@@ -28,7 +28,15 @@ angular
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl',
         controllerAs: 'about'
-      })
+      }).when('/crossfit', {
+        templateUrl: 'views/crossfit.html',
+        controller: 'CrossfitCtrl',
+        controllerAs: 'crossfit'
+    }).when('/onnit', {
+        templateUrl: 'views/onnit.html',
+        controller: 'OnnitCtrl',
+        controllerAs: 'onnit'
+    })
       .otherwise({
         redirectTo: '/'
       });
